@@ -1,0 +1,115 @@
+/* Define a common style for the landing div */
+.landing {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(
+      109.6deg,
+      rgb(1, 24, 54) 11.2%,
+      rgba(0, 37, 84, 0.8) 100.2%
+    );
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
+  
+  /* Define a style for the left span */
+  .left {
+    flex: 1; /* Allow the left span to grow and shrink as needed */
+    padding: 20px; /* Add some padding around the content */
+    text-align: left; /* Align the text to the left */
+    hr {
+      background-color: yellow;
+      border: 1px solid yellow;
+      height: 1px;
+      margin-right: 0.5em;
+      width: 60%;
+    }
+    h4 {
+      font-size: 1.35rem;
+      font-style: italic;
+      color: yellowgreen;
+    }
+    .titles {
+      max-width: 700px;
+      margin-left: 80px;
+      margin-top: 7rem;
+    }
+    .caption1 {
+      display: flex;
+      align-items: center;
+    }
+    .caption2 {
+      p {
+        font-size: 2.5rem;
+        font-style: bold;
+        color: white;
+        text-transform: uppercase;
+        span {
+          color: yellow;
+        }
+      }
+    }
+    .caption3 {
+      max-width: 450px;
+      p {
+        font-size: 1.25rem;
+        font-weight: 200;
+        font-style: oblique 40deg;
+        color: white;
+      }
+    }
+    .btns {
+      display: flex;
+      justify-content: space-between;
+      max-width: 250px;
+      margin-top: 20px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 5px;
+      hr {
+        width: 20%;
+        border: 0.5px solid yellow;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      .titles {
+        max-width: 100%;
+        margin-left: 5px;
+        margin-top: 0.5rem;
+      }
+      .caption2 {
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .caption3 {
+        max-width: 100%;
+        p {
+          font-size: 0.85rem;
+        }
+      }
+      .btns {
+        max-width: 250px;
+        margin-top: 15px;
+      }
+    }
+  }
+  
+  /* Define a style for the right span */
+  .right {
+    flex: 0; /* Prevent the right span from growing and shrinking */
+    padding: 0; /* Add some padding around the image */
+    img {
+      width: 700px; /* Set the image width to 200px */
+      height: 600px; /* Set the image height to 200px */
+    }
+    @media (max-width: 767.98px) {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }

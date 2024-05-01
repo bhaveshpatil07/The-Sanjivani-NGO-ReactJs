@@ -1,0 +1,48 @@
+.wrapper{
+    height: 100vh;
+    background-image: url('../assets/sunrise.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .image{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    img{
+        height: 530px;
+    }
+} */
+.signUp{
+    width: 400px;
+    padding: 30px;
+    height: 530px;
+    margin-top: 8%;
+    border-radius: 8px;
+    border: 0.5px solid whitesmoke;
+    color: white;
+    backdrop-filter: blur(2px) contrast(80%)  brightness(60%);
+    .title{
+        color: white;
+    }
+    .terms{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .alert{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    ::placeholder{
+        color: whitesmoke;
+        opacity: 0.7;
+    }
+    input{
+        font-size: 18px;
+        color: white;
+        background-color: transparent;
+        &:focus{
+            background-color: transparent;
+            color: white;
+        }
+    }
+}

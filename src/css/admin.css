@@ -1,0 +1,91 @@
+.admin {
+  height: 100vh;
+  background: radial-gradient(rgb(1, 24, 54), rgba(0, 37, 84, 0.8), black);
+  .container {
+    position: relative;
+    top: 18%;
+  }
+  .search-container {
+    position: relative;
+  }
+  .search-result {
+    position: absolute;
+    width: 100%;
+    display: none;
+  }
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  /* cursor: pointer; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  i{
+    color: #FFD43B;
+  }
+}
+
+/* The actual popup */
+.popup .popupContent {
+  /* visibility: show; */
+  width: 70rem;
+  height: 30rem;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  @media only screen and (max-width: 1200px) {
+    width: 25rem;
+  }
+  .text-last {
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    padding-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Popup arrow */
+/* .popup .popupContent::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* Toggle this class - hide and show the popup */
+/* .popup .show {
+  visibility: visible; */
+/* -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; */
+/* } */
+
+/* Add animation (fade in the popup) */
+/* @-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */

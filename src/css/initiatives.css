@@ -1,0 +1,116 @@
+.Initiatives{
+    background: linear-gradient(90deg, rgb(1, 24, 54) 11.2%, rgba(0, 37, 84, 0.8) 100.2%);
+    .title{
+        display: flex;
+        /* flex-direction: row-reverse; */
+    }
+    h1{
+        font-family: raleway;
+        font-weight: 700;
+        font-size: 5em;
+        padding-bottom: 0.6em;
+        color: #CECECE;
+        white-space: nowrap;
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+    }
+    .initiative-cards{
+        display: block;
+        margin-left: auto;  
+        margin-right: auto;
+        width: 80%;
+        height: 32vw;
+        img{
+            cursor: pointer;
+        }
+    }
+    .arrows{
+        width: 100%;
+        padding-bottom: 3em;
+        display: flex;
+        margin-top: 1em;
+        justify-content: center;
+        svg{
+            color:#FDBE33;
+            margin-left: 2em;
+            margin-right: 2em;
+            cursor: pointer;
+            &:hover{
+                color: #CECECE;
+                scale: 1.1;
+            }
+        }
+    }
+    .css-1qzevvg{
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1023px){
+    .Initiatives{
+        h1{
+            padding-bottom: 1em;
+            span{
+                display: none;
+            }
+        }
+        .initiative-cards{
+            width: 80%;
+            height: 43vw;
+        }
+        .arrows{
+            margin-bottom: 10em;
+        }
+    }
+}
+
+
+@media only screen
+and (max-width: 767px){
+    .Initiatives{
+        h1{
+            padding-bottom: 0;
+            font-size: 2em;
+            transform: translateX(65px);
+            -webkit-transform: translateX(65px);
+            span{
+                display: none;
+            }
+        }
+        .initiative-cards{
+            width: 10%;
+            height: 63vw;
+        }
+        
+    }
+}
+
+@media only screen 
+and (min-width: 351px)
+and (max-width: 400px){
+
+    .Initiatives{
+        h1{
+            font-size: 2em; 
+            transform: translateX(20px);
+            -webkit-transform: translateX(20px);
+        }
+        .arrows{
+            padding-bottom: 1em;
+            margin-top: 0;
+        }
+    } 
+}
+
+@media only screen 
+and (max-width: 350px){
+    .Initiatives{
+        h1{
+            font-size: 1.5em;
+            transform: translateX(15px);
+            -webkit-transform: translateX(15px);
+        }
+    } 
+}

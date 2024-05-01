@@ -1,0 +1,59 @@
+.video-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.typewriter {
+  position: absolute;
+  top: 90%; /* Center vertically */
+  left: 75%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.1em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.1em; /* Adjust as needed */
+    animation: typing 7.5s steps(40) infinite, blink-caret 0.75s infinite;
+    color: white;
+  }
+  @media (max-width: 767.98px) {
+    left: 50%;
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 100%; /* Keep the width at 100% after typing */
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

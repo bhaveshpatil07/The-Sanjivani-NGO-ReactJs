@@ -1,0 +1,248 @@
+/*******************************/
+/********* Donate CSS **********/
+/*******************************/
+.donations {
+  background: radial-gradient(rgb(1, 24, 54), rgba(0, 37, 84, 0.8), black);
+  padding-bottom: 90px;
+
+  .logs{
+    width: fit-content;
+    margin-left: 10px;
+    margin-bottom: 90px;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 21px;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    h2{
+      font-size: 21px;
+    }
+    span{
+      color: red;
+      border-radius: 8px;
+    }
+  }
+}
+.donate {
+  position: relative;
+  background-image: url("../assets/donate.jpg");
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::before {
+    content: ""; /* This is needed for the pseudo-element to be created */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.4
+    ); /* This creates a white layer with 50% opacity */
+  }
+}
+
+.donate .donate-content {
+  padding: 45px 0 15px 0;
+}
+
+/* .container .donate {
+  margin: 90px 0;
+} */
+
+.container .donate .donate-content {
+  padding: 45px 30px 15px 30px;
+}
+
+.donate .donate-content .section-header {
+  margin-bottom: 30px;
+}
+
+.donate .donate-content .section-header h2 {
+  color: #ffffff;
+}
+
+.donate .donate-text p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.donate .donate-form {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 90px 30px;
+  background: rgba(253, 190, 51, 0.7);
+}
+
+.donate .donate-form .control-group {
+  margin-bottom: 15px;
+}
+
+.donate .donate-form .form-control {
+  font-size: 18px;
+  height: 60px;
+  color: black;
+  font-style: bold;
+  font-size: 18px;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background: transparent;
+}
+
+.donate .donate-form .form-control::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+.donate .donate-form .form-control:-ms-input-placeholder,
+.donate .donate-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.donate .donate-form .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.donate .donate-form .btn-custom {
+  padding: 15px 0;
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-start-start-radius: 12px;
+  border-end-start-radius: 12px;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  font-size: 18px;
+  font-style: bold;
+}
+
+.donate .donate-form .btn-custom:hover,
+.donate .donate-form .btn-custom.active {
+  color: #fdbe33;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 0 0 30px #ffffff;
+}
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 45px auto;
+}
+
+.section-header p {
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fdbe33;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .section-header h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-header h2 {
+    font-size: 35px;
+  }
+}
+
+/******************************/
+/***********POP UP************/
+/******************************/
+.popUp{
+  display: block; 
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  backdrop-filter: blur(4px);
+}
+
+/* Modal Content */
+.popup-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  padding-top: 10px;
+  border: 1.6px solid #fdbe33;
+  width: 35%; /* Could be more or less, depending on screen size */
+  border-radius: 12px;
+  text-align: center;
+  @media only screen and (max-width: 1200px) {
+    margin: 30% auto;
+    min-width: 80%;
+  }
+  h1{
+    margin-bottom: 0;
+  }
+  h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+  label{
+    color: #4a4c70;
+    margin-bottom: 0;
+  }
+  input{
+    width: 70%;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+    margin-right: 20px;
+  }
+  button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .form{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+  }
+}
+
+.closeBtn{
+  text-align: right;
+}

@@ -1,0 +1,99 @@
+.funds {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* The image used */
+    background-image: url("../assets/facts.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set a specific height */
+    height: 300px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before {
+      content: ""; /* This is needed for the pseudo-element to be created */
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+      ); /* This creates a white layer with 50% opacity */
+    }
+    .facts-item {
+      display: flex;
+      flex-direction: row;
+      margin: 25px 0;
+    }
+  
+    .facts-item svg {
+      margin-top: 10px;
+      font-size: 60px;
+      line-height: 60px;
+      color: #fdbe33;
+    }
+  
+    .facts-text {
+      padding-left: 20px;
+    }
+  
+    .facts-text h3 {
+      position: relative;
+      display: inline-block;
+      color: #ffffff;
+      font-size: 45px;
+      font-weight: 700;
+    }
+  
+    .facts-text h3::after {
+      position: absolute;
+      top: 0px;
+      color: #ffffff;
+      font-size: 25px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+    }
+  
+    .facts-text h3.facts-plus::after {
+      content: "\f067";
+      right: -25px;
+    }
+  
+    .facts-text h3.facts-dollar::after {
+      content: "\f155";
+      right: -18px;
+    }
+  
+    .facts-text p {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+    }
+  
+    @media (max-width: 767.98px) {
+      .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .facts-text{
+        h3{
+          font-size: 32px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+  
+  }
+  

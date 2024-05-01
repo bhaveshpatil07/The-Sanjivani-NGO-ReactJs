@@ -1,0 +1,31 @@
+.back-to-top {
+    position: fixed;
+    display: block;
+    background: rgba(253, 190, 51, 0.7);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    transition: background 0.5s;
+    z-index: 10;
+  }
+  
+  .back-to-top i {
+    color: #4a4c70;
+    padding-top: 11px;
+  }
+  
+  .back-to-top:hover {
+    background: rgba(253, 190, 51, 1);;
+  }
+  
+  .back-to-top:hover i {
+    color: rgb(1, 24, 54);
+    font-size: 22px;
+  }
+  
