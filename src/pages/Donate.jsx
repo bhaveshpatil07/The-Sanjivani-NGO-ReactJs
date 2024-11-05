@@ -256,7 +256,7 @@ export default function Donate() {
                     <h1>Your Account</h1>
                     <h2>{showLogin ? 'Enter your password to LogIn' : `Enter your email to LogIn or Create an account.`}</h2>
                     <div className="form">
-                        <input type="email" name="mail" id="mail" onChange={(e) => setEmail(e.target.value)} value={email} placeholder='Enter your email address' autoComplete='true' readOnly={showLogin} required />
+                        <input type="email" name="mail" id="mail" onChange={(e) => setEmail(e.target.value)} value={email} placeholder='Enter your email address' autoComplete='email' readOnly={showLogin} required />
                         {showLogin && <input type="password" name="pass" id="pass" placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} required />}
                         <button type="button" className="btn btn-success" onClick={showLogin ? handleLogin : handleEmail}>{showLogin ? "LogIn" : "Continue"}</button>
                     </div>

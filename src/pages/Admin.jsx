@@ -263,7 +263,7 @@ function Admin() {
                             </div>}
                         </div>
                     </div>
-                    <div className="table-responsive">
+                    <div className="table-responsive" style={{overflowY: "auto", maxHeight: "60vh"}}>
                         <table className="table table-borderless table-dark table-hover">
                             <caption className="caption-top text-light">List of Donations</caption>
                             <thead className="thead-dark">
